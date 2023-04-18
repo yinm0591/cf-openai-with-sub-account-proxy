@@ -8,7 +8,7 @@
 
 2. 创建一个新的 Cloudflare Workers
 
-3. 将 workers.js 复制并粘贴到 Cloudflare Worker 编辑器中
+3. 将 worker.js 复制并粘贴到 Cloudflare Worker 编辑器中
 
 4. 修改 worker.js 中的 subKey
 
