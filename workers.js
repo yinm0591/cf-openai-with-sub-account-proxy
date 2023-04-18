@@ -9,6 +9,8 @@ const OpenAI_Org_ID = null;
 // My API Sub-Keys
 const subKey = ['security-key-1', 'security-key-2'];  
 
+const enable_forwarding_OpenAI_Key = false;
+
 addEventListener('fetch', event => {
     event.respondWith(handleRequest(event.request))
 })
@@ -55,7 +57,7 @@ async function handleRequest(request) {
         redirect: request.redirect,
     })
     const authHeader = newRequest.headers.get('Authorization');
-    if (authHeader && authHeader.startsWith('Bearer sk-')) {
+    if (enable_forwarding_OpenAI_Key && authHeader && authHeader.startsWith('Bearer sk-')) {
         // Forwarding Openai API Key
     }
     else if (authHeader && authHeader.startsWith('Bearer ')) {

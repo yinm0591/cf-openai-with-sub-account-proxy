@@ -11,3 +11,9 @@
 5. 保存并部署
 
 6. 绑定自定义域名，在 Workers 详情页 -> Trigger -> Custom Domains 中为这个程序添加自定义域名
+
+## 特点：
+1. 兼容ChatGPT Next Web、OpenCat等项目
+
+2. 支持OpenAI的流输出，体验佳
+
