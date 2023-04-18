@@ -1,13 +1,11 @@
 // project url: https://github.com/yinm0591/cf-openai-with-sub-account-proxy
 
-// OpenAI API Key
-const OpenAI_Key = 'sk-Cf***';     
-
-// OpenAI Organization ID, set to null if it does not exist
-const OpenAI_Org_ID = null;
-
-// My API Sub-Keys
-const subKey = ['security-key-1', 'security-key-2'];  
+// item format: My_API_Sub_Keys : [OpenAI_API_Key, OpenAI_Organization_ID]
+// set OpenAI_Organization_ID to null if it does not exist
+const subKey = {
+    'security-key-1': ['sk-Cf***', 'YOUR_ORG_ID'],
+    'security-key-2': ['sk-Cf***', null]
+};
 
 const enable_forwarding_OpenAI_Key = false;
 
@@ -62,12 +60,12 @@ async function handleRequest(request) {
     }
     else if (authHeader && authHeader.startsWith('Bearer ')) {
         const authKey = authHeader.replace('Bearer ', '');
-        if (!subKey.includes(authKey)) {
+        if (!(authKey in subKey)) {
             return new Response('{"error": {"message": "Incorrect API key","type": "invalid_request_error"}}\n', { status: 401 });
         }
-        newRequest.headers.set("Authorization", "Bearer " + OpenAI_Key);
-        if (OpenAI_Org_ID) {
-            newRequest.headers.set("OpenAI-Organization", OpenAI_Org_ID);
+        newRequest.headers.set("Authorization", "Bearer " + subKey[authKey][0]);
+        if (subKey[authKey][1] !== null) {
+            newRequest.headers.set("OpenAI-Organization", subKey[authKey][1]);
         }
     } else {
         return new Response('{"error": {"message": "Missing API key","type": "invalid_request_error"}}\n', { status: 401 });
