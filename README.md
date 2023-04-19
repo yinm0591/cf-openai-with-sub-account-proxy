@@ -22,8 +22,11 @@ Currently, most programs accessing the OpenAI API do not support the Organizatio
 7. Follow the instructions provided by the OpenAI software to fill in the custom domain name.
 
 ### Features:
+1. Create multiple personal API keys to protect your OpenAI key from being leaked.
 
-Compatible with <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>, <a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>, <a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>, OpenCat, and other projects.
+2. Your personal API keys can be tied to an Organization ID.
 
-Supports OpenAI's streaming output for a better user experience.
+3. Compatible with <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>, <a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>, <a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>, OpenCat, and other projects.
+
+4. Supports OpenAI's streaming output for a better user experience.
 
