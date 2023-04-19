@@ -22,8 +22,10 @@
 7. 根据您使用的OpenAI软件说明，将自定义域名填入
 
 ### 特点：
-1. 兼容<a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>、<a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>、<a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>、OpenCat等项目
+1. 建立多个自己的API KEY，保护OpenAI KEY不泄露
 
-2. 支持OpenAI的流输出，体验佳
+2. 自己的API KEY能绑定Organization ID
 
+3. 兼容<a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>、<a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>、<a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>、OpenCat等项目
 
+3. 支持OpenAI的流输出，体验佳
