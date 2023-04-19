@@ -7,21 +7,23 @@ Currently, most programs accessing the OpenAI API do not support the Organizatio
 
 ### Deployment Steps:
 
-1. Register and log in to a Cloudflare account.
+1. Register and log in to your Cloudflare account.
 
-2. Create a new Cloudflare Worker.
+2. Navigate to the "Workers" menu item and create a new Worker by clicking the "Create a service" button.
 
-3. Copy and paste worker.js into the Cloudflare Worker editor.
+3. Click "Quick edit" and paste the contents of worker.js into the Cloudflare Worker code editor.
 
-4. Modify the subKey in worker.js.
+4. Modify the "subKey" variable in the code editor.
 
-5. Save and deploy.
+5. Once done, click "Save and deploy".
 
-Bind a custom domain by adding it to the program in Workers Details -> Trigger -> Custom Domains.
+6. Add a custom domain by going to the Worker details page -> Triggers -> Custom Domains -> Add Custom Domain, and provide a custom domain name specific to this service.
+
+7. Follow the instructions provided by the OpenAI software to fill in the custom domain name.
 
 ### Features:
 
-Compatible with ChatGPT Next Web, OpenCat, and other projects.
+Compatible with <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>, <a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>, <a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>, OpenCat, and other projects.
 
 Supports OpenAI's streaming output for a better user experience.
 
