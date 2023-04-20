@@ -1,4 +1,4 @@
-## OpenAI API 转接防火墙保护服务
+## OpenAI API 转接及防护服务
 
 <a href="./README.md">English</a> |
 <a href="./README_cn.md">中文</a>

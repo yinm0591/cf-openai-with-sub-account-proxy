@@ -1,4 +1,4 @@
-## Protect your OpenAI Key: Proxy Service with API Firewall
+## Protect your OpenAI Key: Proxy Service with Subkey & API Firewall
 
 <a href="./README.md">English</a> |
 <a href="./README_cn.md">中文</a>
