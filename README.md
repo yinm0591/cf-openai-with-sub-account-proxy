@@ -7,12 +7,14 @@
 1. Create multiple personal API keys to protect your OpenAI key from being leaked.
 
 2. Only APIs related to GPT Chat are allowed to pass, in order to prevent hackers from accessing account privacy information using undisclosed API interfaces.
-   
-3. Support for Organization ID is provided, which allows customized KEYs to be converted to OpenAI_API_Key + OpenAI_Org_ID for compatibility with the vast majority of OpenAI API programs.
 
-4. Compatible with <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>, <a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>, <a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>, OpenCat, and other projects.
+3. Auditing third-party software access to the OpenAI API through Cloudflare logs.
 
-5. Supports OpenAI's streaming output for a better user experience.
+4. Support for Organization ID is provided, which allows customized KEYs to be converted to OpenAI_API_Key + OpenAI_Org_ID for compatibility with the vast majority of OpenAI API programs.
+
+5. Compatible with <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>, <a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>, <a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>, OpenCat, and other projects.
+
+6. Supports OpenAI's streaming output for a better user experience.
 
 
 ### Deployment Steps:
