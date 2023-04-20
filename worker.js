@@ -7,6 +7,13 @@ const subKey = {
     'security-key-2': ['sk-Cf***', null]
 };
 
+const validPaths = [
+    '/v1/models',
+    '/v1/chat/completions',
+    '/dashboard/billing/usage',
+    '/dashboard/billing/subscription',
+];
+
 const enable_forwarding_OpenAI_Key = false;
 
 addEventListener('fetch', event => {
@@ -54,9 +61,13 @@ async function handleRequest(request) {
         body: request.body,
         redirect: request.redirect,
     })
+
+    let chkVaildPath = true;
+    console.log('url:', url.pathname);
     const authHeader = newRequest.headers.get('Authorization');
     if (enable_forwarding_OpenAI_Key && authHeader && authHeader.startsWith('Bearer sk-')) {
         // Forwarding Openai API Key
+        chkVaildPath = false;
     }
     else if (authHeader && authHeader.startsWith('Bearer ')) {
         const authKey = authHeader.replace('Bearer ', '');
@@ -69,6 +80,10 @@ async function handleRequest(request) {
         }
     } else {
         return new Response('{"error": {"message": "Missing API key","type": "invalid_request_error"}}\n', { status: 401 });
+    }
+
+    if (chkVaildPath && !validPaths.some(prefix => url.pathname.startsWith(prefix))) {
+        return new Response('{"error": {"message": "API Error","type": "invalid_request_error"}}\n', { status: 401 });
     }
 
     const response = await fetch(newRequest, { cf: { stream: true } });

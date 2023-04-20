@@ -1,19 +1,18 @@
-## 支持 Organization ID 的 OpenAI API 转接服务
+## OpenAI API 转接防火墙保护服务
 
 <a href="./README.md">English</a> |
 <a href="./README_cn.md">中文</a>
 
-目前，大多数接入OpenAI API程序都不支持Organization ID。这个项目是将自定义的KEY转换成OpenAI_API_Key + OpenAI_Org_ID，以兼容绝大多数的OpenAI API程序。
-
-
 ### 特点：
-1. 建立多个自己的API KEY，保护OpenAI KEY不泄露
+1. 能创建多个自定义API KEY，保护OpenAI KEY不泄露
 
-2. 自己的API KEY能绑定Organization ID
+2. 只放行与GPT Chat相关的接口，避免黑客使用未公开的API接口获取帐号隐私信息
+   
+3. 支持Organization ID，可以将自定义的KEY转换成OpenAI_API_Key + OpenAI_Org_ID，以兼容绝大多数的OpenAI API程序
 
-3. 兼容<a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>、<a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>、<a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>、OpenCat等项目
+4. 兼容<a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>、<a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>、<a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>、OpenCat等项目
 
-3. 支持OpenAI的流输出，体验佳
+5. 支持OpenAI的流输出，体验佳
 
 
 ### 部署步骤：

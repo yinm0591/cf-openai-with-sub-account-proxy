@@ -1,19 +1,18 @@
-## OpenAI API Proxy Service Supporting Organization ID
+## Protect your OpenAI Key: Proxy Service with API Firewall
 
 <a href="./README.md">English</a> |
 <a href="./README_cn.md">中文</a>
 
-Currently, most programs accessing the OpenAI API do not support the Organization ID. This project converts custom keys into OpenAI_API_Key + OpenAI_Org_ID for compatibility with the vast majority of OpenAI API programs.
-
-
 ### Features:
 1. Create multiple personal API keys to protect your OpenAI key from being leaked.
 
-2. Your personal API keys can be tied to an Organization ID.
+2. Only APIs related to GPT Chat are allowed to pass, in order to prevent hackers from accessing account privacy information using undisclosed API interfaces.
+   
+3. Support for Organization ID is provided, which allows customized KEYs to be converted to OpenAI_API_Key + OpenAI_Org_ID for compatibility with the vast majority of OpenAI API programs.
 
-3. Compatible with <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>, <a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>, <a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>, OpenCat, and other projects.
+4. Compatible with <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">ChatGPT Next Web</a>, <a href="https://github.com/mckaywrigley/chatbot-ui">chatbot-ui</a>, <a href="https://github.com/Chanzhaoyu/chatgpt-web">chatgpt-web</a>, OpenCat, and other projects.
 
-4. Supports OpenAI's streaming output for a better user experience.
+5. Supports OpenAI's streaming output for a better user experience.
 
 
 ### Deployment Steps:
